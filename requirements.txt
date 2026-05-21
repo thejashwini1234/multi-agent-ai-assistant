@@ -1,0 +1,15 @@
+streamlit
+sqlalchemy
+pymysql
+python-dotenv
+langchain
+langchain-community
+langchain-groq
+langchain-text-splitters
+faiss-cpu
+numpy
+scikit-learn
+pypdf
+sentence-transformers
+groq
+pandas
