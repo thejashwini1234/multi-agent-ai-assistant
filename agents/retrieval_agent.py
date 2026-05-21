@@ -31,7 +31,7 @@ def retrieval_agent(
     """
 
     llm = ChatGroq(
-    groq_api_key=st.secrets["GROQ_API_KEY"],
+    api_key=st.secrets["GROQ_API_KEY"],
     model_name="llama3-8b-8192"
 )
 
