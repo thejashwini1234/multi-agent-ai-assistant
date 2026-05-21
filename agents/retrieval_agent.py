@@ -1,9 +1,7 @@
-from dotenv import load_dotenv
+import streamlit as st
 from langchain_groq import ChatGroq
 
 from rag.embeddings import embed_query
-
-load_dotenv()
 
 def retrieval_agent(
     vectorstore,
@@ -33,8 +31,9 @@ def retrieval_agent(
     """
 
     llm = ChatGroq(
-        model_name="llama-3.3-70b-versatile"
-    )
+    groq_api_key=st.secrets["GROQ_API_KEY"],
+    model_name="llama3-8b-8192"
+)
 
     response = llm.invoke(prompt)
 
